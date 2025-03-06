@@ -1,0 +1,38 @@
+Primero crear bd
+
+CREATE DATABASE IF NOT EXISTS jmas;
+
+USE jmas;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    cod_usuario INT AUTO_INCREMENT PRIMARY KEY,  -- ID único del usuario
+    nombre VARCHAR(100) NOT NULL,                 -- Nombre de usuario
+    password VARCHAR(255) NOT NULL,               -- Contraseña en SHA-1
+    privilegios VARCHAR(50) NOT NULL             -- Privilegios (por ejemplo, 'admin')
+);
+
+se debe insertar un usuario de prueba para poder acceder
+el password se guardaráa como SHA1
+
+INSERT INTO usuarios (nombre, password, privilegios)
+VALUES ('prueba', '711383a59fda05336fd2ccf70c8059d1523eb41a', 'admin');
+
+crear tabla archivo
+
+CREATE TABLE archivo (
+    cod_archivo INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_archivo VARCHAR(255) NOT NULL,
+    nombre_cat VARCHAR(255) NOT NULL,
+    fecha DATE NOT NULL
+);
+
+crear tabla categoria
+
+CREATE TABLE categoria (
+    cod_categoria INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_cat VARCHAR(255) NOT NULL
+);
+
+tambien en la carpeta raíz deberá crearse una carpeta llamada documentos
+
+se utiliza el Dropzone.js para la carga de archivos
