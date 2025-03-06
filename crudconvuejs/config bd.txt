@@ -1,0 +1,8 @@
+En este crud se debe crear una bd llamada crudconvuejs y crear una tabla moviles de la siguiente manera
+
+CREATE TABLE moviles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(100) NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    stock INT NOT NULL
+);

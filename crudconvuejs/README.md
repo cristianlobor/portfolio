@@ -1,0 +1,1 @@
+En este proyecto se realizo un CRUD con vuejs y php de manera que se interactue mediante JSON, la configuración de la base de datos viene en el config bd.txt
