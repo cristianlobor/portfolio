@@ -1,0 +1,7 @@
+{
+    "name": "localhost/qr-code",
+    "description": "Descripción de mi proyecto",
+    "require": {
+        "endroid/qr-code": "^6.0"
+    }
+}
