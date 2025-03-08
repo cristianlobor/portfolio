@@ -1,0 +1,8 @@
+La base de datos se llama api-php la cual tiene una tabla llamada users
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
