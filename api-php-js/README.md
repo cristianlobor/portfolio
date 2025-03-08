@@ -19,5 +19,4 @@ Este proyecto implementa un sistema de gestión de usuarios donde el frontend es
 ### Funcionalidades
 
 - **Gestión de usuarios**: Los administradores pueden agregar, modificar, eliminar y consultar usuarios.
-- **Autenticación**: Los usuarios pueden iniciar sesión para acceder a su información.
 - **API**: La comunicación entre el frontend y el backend se realiza a través de una API RESTful.
